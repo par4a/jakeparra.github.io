@@ -10,8 +10,10 @@ html{
 }
 
 #Home{
+    display: flex;
     background-color: #181823;
 }
+
 #Projects{
     background-color: black;
 }

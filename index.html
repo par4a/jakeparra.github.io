@@ -13,6 +13,8 @@
 <style>
 
   body {
+    margin-top: 0;
+    margin:0;
     background-color: #181823;
     color: white;
     text-align: left;
@@ -21,15 +23,23 @@
   h1 {
     font-size: 78px;
     margin-left: 40%;
+    z-index: 1;
   }
 
+  h2 {
+    font-size: 78px;
+    z-index: 1;
+    margin-left: -2%;
+  }
 
   .topnav {
     overflow: hidden;
     position: fixed;
+    top: 0;
     width: 100%;
     z-index: 1000;
     background-color: black;
+
   }
 
   .topnav a {
@@ -37,9 +47,9 @@
     display: block;
     color: #f2f2f2;
     text-align: center;
-    padding: 14px 16px;
+    padding: 20px 20px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 25px;
   }
 
   .topnav a:hover {
@@ -56,6 +66,11 @@
     padding: 16px;
     margin-top: 30px;
   }
+  img {
+    margin: 0;
+    z-index: 0;
+  }
+
 </style>
 </head>
 
@@ -69,14 +84,13 @@
 
   <div class="main">
     <section id="Home">
-      
-      <h1><br>I'm Jake Parra. <br>
+      <img src="photos/BlueTie_ProfilePicture.png" alt="BWProfilePicture" width="700" height="900">
+      <h2>
+        <br>I'm Jake Parra. <br>
         A Computer Science <br>
         Student looking <br>
         towards a bright future.
-      </h1>
-
-      <img src="/photos/BlueTie_ProfilePicture.jpg" alt="BW_ProfilePicture" style="width:350px;height:700px;">
+      </h2>
 
     </section>
 
