@@ -1,19 +1,5 @@
 <!DOCTYPE html>
-<html>
-<div class="topnav">
-    <a href="index.html">Home</a>
-    <a href="aboutMe.html">About Me</a>
-    <a href="contactMe.html">Contact Me</a>
-</div>
-
-<style>
-    body {
-        background-color: #025A6C;
-        color: white;
-        text-align: center;
-        margin-top: 10%; /* Top Margin */
-    }
-</style>
+<html lang="en">
 
 <head>
     <meta name="author" content="Jake Parra">
@@ -21,19 +7,52 @@
     <meta name="description" content="My homepage for my website">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Jake Parra</title>
 
-    <title>Jake's Website</title>
+    <style>
+        body {
+            background-color: #025A6C;
+            color: white;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0; /* Remove default margin for h1 */
+        }
+
+        .topnav {
+            margin-top: 0%;
+            background-color: #000000;
+            font-size: medium;
+            display: flex;
+            justify-content: space-around; /* Adjust alignment as needed */
+            padding: 10px; /* Add padding for better aesthetics */
+        }
+
+        .topnav a {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
 </head>
 
 <body>
-    <h2>About Jake!</h2>
-        <img src= "./photos/Jake_Profile.png" alt="Profile Picture">
-        <p>I am a senior enrolled in Computer Science through CSU online. Originally from Lakewood, CO and currently living in Fort Collins, CO. Working as a Quality Control Technician at Valimenta Labs with an upcoming job position within their IT department. Very self-motivated and determined. Enjoys spending time outdoors, exercising, going to concerts, and meeting new people.</p>
-</body>
 
-<footer>
-    <p> Stick around to watch this page grow!</p>
-    <p> ~Jake </p>
-</footer>
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="aboutMe.html">About Me</a>
+        <a href="contactMe.html">Contact Me</a>
+    </div>
+
+    <h2>About Jake!</h2>
+    <img src= "./photos/Jake_Profile.png" alt="Profile Picture">
+    <p>I am a senior enrolled in Computer Science through CSU online. 
+        Originally from Lakewood, CO and currently living in Fort Collins, CO. 
+        Working as a Quality Control Technician at Valimenta Labs with an upcoming 
+        job position within their IT department. Very self-motivated and determined. 
+        Enjoys spending time outdoors, exercising, going to concerts, and 
+        meeting new people.</p>
+</body>
 
 </html>

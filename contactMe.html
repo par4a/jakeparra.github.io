@@ -1,19 +1,5 @@
 <!DOCTYPE html>
-<html>
-<div class="topnav">
-    <a href="index.html">Home</a>
-    <a href="aboutMe.html">About Me</a>
-    <a href="contactMe.html">Contact Me</a>
-</div>
-
-<style>
-    body {
-        background-color: #025A6C;
-        color: white;
-        text-align: center;
-        margin-top: 10%; /* Top Margin */
-    }
-</style>
+<html lang="en">
 
 <head>
     <meta name="author" content="Jake Parra">
@@ -22,18 +8,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>Jake's Website</title>
+    <title>Jake Parra</title>
+
+    <style>
+        body {
+            background-color: #025A6C;
+            color: white;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0; /* Remove default margin for h1 */
+        }
+
+        .topnav {
+            margin-top: 0%;
+            background-color: #000000;
+            font-size: medium;
+            display: flex;
+            justify-content: space-around; /* Adjust alignment as needed */
+            padding: 10px; /* Add padding for better aesthetics */
+        }
+
+        .topnav a {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
 </head>
 
 <body>
+
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="aboutMe.html">About Me</a>
+        <a href="contactMe.html">Contact Me</a>
+    </div>
+
     <h2>Contact Me!</h2>
     <h3>E-mail</h3>
     <p> jacobrp@rams.colostate.edu</p>
 </body>
-
-<footer>
-    <p> Stick around to watch this page grow!</p>
-    <p> ~Jake </p>
-</footer>
 
 </html>
