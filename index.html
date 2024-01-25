@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<link rel="stylesheet" href="style.css">
 <head>
     <meta name="author" content="Jake Parra">
     <meta name="keywords" content="HTML, CSS, JavaScript, Jake, Parra">
@@ -10,65 +10,87 @@
     
     <title>Jake Parra</title>
 
-    <style>
-        body {
-            background-color: #181823;
-            color: white;
-            text-align: left;
-        }
+<style>
 
-        h1 {
-            margin: 0; /* Remove default margin for h1 */
-            font-size: 78px;
-            position: relative; left: 400px;
-        }
+  body {
+    background-color: #181823;
+    color: white;
+    text-align: left;
+  }
+
+  h1 {
+    font-size: 78px;
+    margin-left: 40%;
+  }
 
 
-        .topnav {
-  overflow: hidden;
-  background-color: #181823;
-}
+  .topnav {
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    background-color: black;
+  }
 
-.topnav a {
-  float: right;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
+  .topnav a {
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
 
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
 
-.topnav a.active {
-  background-color: #04AA6D;
-  color: white;
-}
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
 
-    </style>
+  .main{
+    padding: 16px;
+    margin-top: 30px;
+  }
+</style>
 </head>
 
 <body>
+  <div class="topnav">
+    <a href="#Contact">Contact</a>
+    <a href="#Work">Work</a>
+    <a href="#Projects">Projects</a>
+    <a href="#Home">Home</a>   
+  </div>
 
-    <div class="topnav">
-    	<a href="contact.html">Contact</a>
-        <a href="work.html">Work</a>
-        <a href="experience.html">Experience</a>
-        <a href="index.html">Home</a>
-        
-        
-        
-    </div>
+  <div class="main">
+    <section id="Home">
+      <img src="/photos/BlueTie_ProfilePicture.jpg" alt="BW_ProfilePicture">
+      
+      <h1><br>I'm Jake Parra. <br>
+        A Computer Science <br>
+        Student looking <br>
+        towards a bright future.
+      </h1>
+    </section>
 
-    <h1>I'm Jake Parra. <br>
-    A Computer Science <br>
-    Student looking <br>
-    towards a bright future.
-    </h1>
+    <section id="Projects">
+    <h1><br>Projects</h1>
+    </section>
 
+    <section id="Work">
+    <h1><br>Work Experience</h1>
+    </section>
+
+    <section id="Contact">
+    <h1><br>About Jake</h1>
+    </section>
+
+  </div>
 </body>
 
 </html>

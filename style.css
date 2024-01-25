@@ -1,0 +1,23 @@
+html{
+    scroll-behavior: smooth;
+}
+
+#Home,
+#Projects,
+#Work,
+#Contact{
+    height: 900px;
+}
+
+#Home{
+    background-color: #181823;
+}
+#Projects{
+    background-color: black;
+}
+#Work{
+    background-color: #181823;
+}
+#Contact{
+    background-color: black;
+}
