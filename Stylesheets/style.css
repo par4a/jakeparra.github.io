@@ -57,6 +57,7 @@ html{
     margin-top: 30px;
   }
   img {
+    float: left;
     margin: 0;
     z-index: 0;
   }
