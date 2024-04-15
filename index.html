@@ -1,39 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <link rel="stylesheet" href="Stylesheets/style.css">
-<link rel="stylesheet" href="Stylesheets/navbar.css">
 
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="author" content="Jake Parra">
   <meta name="keywords" content="HTML, CSS, JavaScript, Jake, Parra">
-  <meta name="description" content="My homepage for my website">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <meta property="og:site_name" content="jakeparra.com">
+  <meta property="og:title" content="jakeparra.com">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://jakeparra.com">
+  <meta name="description" content="Portfolio website for Jake Parra.">
+  <link rel="preload" as="font" type="font/woff2" crossorigin="" href="/fonts/mosk-600.woff2">
+  <link rel="preload" as="font" type="font/woff" crossorigin="" href="/fonts/mosk-600.woff">
+  <link rel="preload" as="font" type="font/woff2" crossorigin="" href="/fonts/mosk-900.woff2">
+  <link rel="preload" as="font" type="font/woff" crossorigin="" href="/fonts/mosk-900.woff">
+  <link rel="preload" as="font" type="font/woff2" crossorigin="" href="/fonts/jenthill.woff2">
+  <link rel="preload" as="font" type="font/woff" crossorigin="" href="/fonts/jenthill.woff">
   <title>Jake Parra | Home</title>
+
+  <nav class="nav">
+    <ul class="[ nav__list ] [ box-flex align-center md:space-before ]">
+      <li class="nav__item">
+        <a href="index.html" class="nav__item-hover" data-id="home">
+          <span class="nav__item-hover-inner" data-hover="home">home</span>
+        </a>
+      </li>
+      <li class="nav__item">
+        <a href="work.html" class="nav__item-hover" data-id="work">
+          <span class="nav__item-hover-inner" data-hover="work">work</span>
+        </a>
+      </li>
+      <li class="nav__item">
+        <a href="projects.html" class="nav__item-hover" data-id="projects">
+          <span class="nav__item-hover-inner" data-hover="projects">projects</span>
+        </a>
+      </li>
+      <li class="nav__item">
+        <a href="contact.html" rel="external" class="nav__item-hover" data-id="contact">
+          <span class="nav__item-hover-inner" data-hover="contact">contact</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
 </head>
 
 <body>
-  <nav>
-    <div class="navbar">
-      <div class="logo"><a href="index.html">JP</a></div>
-      <ul class="menu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="work.html">Work</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
-
-  <img src="./Photos/JakeParraProfilePic.JPG" alt="Jake Parra posing for headshot photo"> 
-  
-  
-  <h2>
-    I'm Jake Parra. <br>
-    A computer science <br>
-    student looking towards <br>
-    a bright future. <br>
+  <img src="./Photos/JakeParraProfilePic.JPG" alt="Jake Parra posing for headshot photo" height="600px">
+  <h1 class="small-heading">
+    👋 Hi! My name is
+  </h1>
+  <h2 class="big-heading">
+    Jacob Parra.
+  </h2>
+  <h2 class="big-heading">
+    I like computers!
+  </h2>
+  <p class="boxed-lilac" style="width: 45%;">
+    I am a recent CompSci graduate from Colorado State University who is looking to gain work experience in the field of
+    web development and UX!
+  </p>
 
 </body>
 
