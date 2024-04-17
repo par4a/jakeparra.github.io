@@ -15,13 +15,12 @@
   <meta name="description" content="Portfolio website for Jake Parra.">
   <title>Jake Parra | Home</title>
 
+
   <nav class="nav">
-    <ul class="[ nav__list ] [ box-flex align-center md:space-before ]">
-      <li class="nav__item">
-        <a href="index.html" class="nav__item-hover" data-id="home">
-          <span class="nav__item-hover-inner" data-hover="home">home</span>
-        </a>
-      </li>
+    <div id="logo">
+      <a href="index.html"><img src="Photos/Logo.svg" alt="JP logo" height="80"></a>
+    </div>
+    <ul class="[ nav__list ] [ box-flex align-left md:space-before ]">
       <li class="nav__item">
         <a href="work.html" class="nav__item-hover" data-id="work">
           <span class="nav__item-hover-inner" data-hover="work">work</span>
@@ -42,21 +41,23 @@
 </head>
 
 <body>
-  <img src="./Photos/JakeParraProfilePic.JPG" alt="Jake Parra posing for headshot photo" height="600px">
+  <img id="headshot" src="./Photos/JakeParraProfilePic.JPG" alt="Jake Parra posing for headshot photo" height="600px">
   <h1 class="small-heading">
     👋 Hi! My name is
   </h1>
-  <h2 class="big-heading">
-    Jacob Parra.
+  <h2 class="big-heading" id="name">
+    Jake Parra.
   </h2>
   <h2 class="big-heading">
     I like computers!
   </h2>
-  <p class="boxed-lilac" style="width: 45%;">
+  <p class="boxed-mint" style="width: 45%;">
     I am a recent CompSci graduate from Colorado State University who is looking to gain work experience in the field of
     web development and UX!
   </p>
-
 </body>
+<footer>
+    &copy; Copyright 2024 jakeparra.com
+</footer>
 
 </html>
