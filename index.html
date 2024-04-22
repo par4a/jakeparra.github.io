@@ -43,22 +43,111 @@
 <body>
   <img id="headshot" src="./Photos/JakeHeadshotPurpleRedpinkBG.png"
     alt="Jake Parra headshot photo with a red-pink circle in the background" height="500px">
+
   <h1 class="small-heading">
     👋 Hi! My name is
   </h1>
   <h2 class="big-heading" id="name">
     Jake Parra.
   </h2>
-  <h2 class="big-heading">
-    I like computers!
+  <h2 class="small-heading">
+    I am a
+    <div data-typewriter="Full Stack Developer. , Software Tester, Web Designer. , Programmer."></data-typewriter=>
+    </div>
   </h2>
-  <p class="boxed-mint" style="width: 45%;">
-    I am a recent CompSci graduate from Colorado State University who is looking to gain work experience in the field of
-    web development and UX!
-  </p>
+
+  <a href="https://github.com/par4a" target="_blank">
+    <button class="btn"><img src="Photos/github-icon.svg" alt="github button" height="200px"></button>
+  </a>
+  <a href="https://www.linkedin.com/in/jacob-parra-223402189/" target="_blank">
+    <button class="btn"><img src="Photos/icons8-linkedin.svg" alt="linkedin button" height="200px"></button>
+  </a>
+
+  <div class="boxed-pinkred">
+    <h3 class="aboutMe"> About Me</h3>
+    <p style="color:var(--color-mint)">
+      I am a passionate and driven Computer Science student on the brink of graduation who is eagerly diving into the
+      dynamic world of web development. With a keen eye for design and a love for crafting seamless digital
+      experiences,
+      I am on a mission to merge creativity with technology.
+    </p><br>
+    <p style="color:var(--color-mint)">
+      I am extremely goal oriented and strive for opportunities to bring my ideas to life through code. Whether I am
+      building intuitive user interfaces or working on complex backend architecture, I thrive on the challenge of
+      turning my concepts into reality through planning and implementation. My proficiency in HTML, CSS, JavaScript,
+      and
+      a variety of web development tools empower me to tackle projects with both confidence and creativity.
+    </p><br>
+    <p style="color:var(--color-mint)">
+      As I stand at the threshold of my career, I am eager to embark on a professional journey in the tech industry. I
+      am actively seeking an internship where I can contribute my skills, learn from seasoned professionals, and
+      immerse
+      myself in real-world challenges. My goal is not just to gain experience, but to make meaningful contributions to
+      innovative projects and grow alongside a dynamic team.
+    </p><br>
+    <p style="color:var(--color-mint)">
+      I am always open to learning new concepts, utilizing new tools and technologies, and working closely in a
+      collaborative environment.
+    </p><br>
+    <p style="color:var(--color-mint)">
+      Let’s connect and explore these opportunities together!
+    </p>
+  </div>
 </body>
+
+<script>
+  class Typerwriter {
+    constructor(el, options) {
+      this.el = el;
+      this.words = [...this.el.dataset.typewriter.split(',')];
+      this.speed = options?.speed || 100;
+      this.delay = options?.delay || 1500;
+      this.repeat = options?.repeat;
+      this.initTyping();
+    }
+
+    wait = (ms) => new Promise((resolve) => setTimeout(resolve, ms))
+
+    toggleTyping = () => this.el.classList.toggle('typing');
+
+    async typewrite(word) {
+      await this.wait(this.delay);
+      this.toggleTyping();
+      for (const letter of word.split('')) {
+        this.el.textContent += letter;
+        await this.wait(this.speed)
+      }
+      this.toggleTyping();
+      await this.wait(this.delay);
+      this.toggleTyping();
+      while (this.el.textContent.length !== 0) {
+        this.el.textContent = this.el.textContent.slice(0, -1);
+        await this.wait(this.speed)
+      }
+      this.toggleTyping();
+    }
+
+    async initTyping() {
+      for (const word of this.words) {
+        await this.typewrite(word);
+      }
+      if (this.repeat) {
+        await this.initTyping();
+      } else {
+        this.el.style.animation = 'none';
+      }
+    }
+  }
+
+  document.querySelectorAll('[data-typewriter]').forEach(el => {
+    new Typerwriter(el, {
+      repeat: true,
+    })
+  })
+</script>
+
 <footer>
-  &copy; Copyright 2024 jakeparra.com
+  &copy; JAKE PARRA 2024. ALL RIGHTS RESERVED
 </footer>
 
 </html>
