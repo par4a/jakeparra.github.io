@@ -4,6 +4,9 @@
   --color-pinkred: #FB335C;
   --color-mint: #77CCAA;
   --color-eggshell: #E5EFD0;
+  --color-lightpurple: #999AC6;
+  --color-skyblue: #66C3FF;
+  --color-pink: #C471ED;
 }
 
 * {
@@ -27,11 +30,9 @@ h3,
 h4,
 li,
 ol,
-p,
 ul {
   margin: 0;
-  padding-left: 1%;
-  padding-right: 1%;
+  padding-inline: 1rem;
 }
 
 body {
@@ -721,13 +722,56 @@ p {
   padding-right: 5%;
 }
 
+p {
+  padding-top: 1rem;
+  font-weight: bold;
+  font-size: 1.3rem;
+  text-align: justify;
+}
+
+.buttonContainer {
+
+}
+
 footer {
   color: var(--color-mint);
   text-align: center;
-  position:relative;
+  position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
+}
+
+.aboutMe{
+  text-align: center;
+}
+
+.wrapper {
+  max-width: 80rem;
+  margin-inline: auto;
+  padding-inline: 1rem;
+}
+
+section {
+  padding-block: 5rem;
+}
+
+.diagonal {
+  position: relative;
+  color: #000;
+}
+
+.diagonal::after {
+  content: '';
+  position: absolute;
+  background-image:
+    linear-gradient(45deg,
+      var(--color-mint),
+      #12c2e9,
+      var(--color-mint));
+  inset: 0;
+  transform: skewY(-6deg);
+  z-index: -1;
 }
 
 .big-heading {
@@ -771,13 +815,6 @@ footer {
   height: 3rem;
 }
 
-.aboutMe {
-  text-align: left;
-  margin-left: auto;
-  margin-right: auto;
-  color: var(--color-pinkred);
-}
-
 /* button */
 .btn {
   margin: 50px;
@@ -790,6 +827,7 @@ footer {
   z-index: 0;
   border-radius: 12px;
 }
+
 .btn::after {
   content: "";
   z-index: -1;
@@ -801,20 +839,19 @@ footer {
   top: 0;
   border-radius: 10px;
 }
+
 /* glow */
 .btn::before {
   content: "";
-  background: linear-gradient(
-    45deg,
-    #FF0000,var(--color-pinkred),#002BFF,var(--color-mint),#00FFD5,#FF0000
-  );
+  background: linear-gradient(45deg,
+      #FF0000, var(--color-pinkred), #002BFF, var(--color-mint), #00FFD5, #FF0000);
   position: absolute;
   top: -2px;
   left: -2px;
   background-size: 600%;
   z-index: -1;
   width: calc(100% + 4px);
-  height:  calc(100% + 4px);
+  height: calc(100% + 4px);
   filter: blur(8px);
   animation: glowing 20s linear infinite;
   transition: opacity .3s ease-in-out;
@@ -823,9 +860,17 @@ footer {
 }
 
 @keyframes glowing {
-  0% {background-position: 0 0;}
-  50% {background-position: 400% 0;}
-  100% {background-position: 0 0;}
+  0% {
+    background-position: 0 0;
+  }
+
+  50% {
+    background-position: 400% 0;
+  }
+
+  100% {
+    background-position: 0 0;
+  }
 }
 
 /* hover */
