@@ -67,6 +67,27 @@ textarea::-webkit-input-placeholder {
   display: flex;
 }
 
+.custom-shape-divider-bottom-1713847924 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1713847924 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 144px;
+}
+
+.custom-shape-divider-bottom-1713847924 .shape-fill {
+  fill: #FB335C;
+}
+
 .box-block {
   display: block
 }
@@ -703,7 +724,7 @@ p {
 footer {
   color: var(--color-mint);
   text-align: center;
-  position: fixed;
+  position:relative;
   left: 0;
   bottom: 0;
   width: 100%;
