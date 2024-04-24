@@ -70,11 +70,12 @@ textarea::-webkit-input-placeholder {
 
 .custom-shape-divider-bottom-1713847924 {
   position: absolute;
-  bottom: 0;
+  bottom: -1;
   left: 0;
   width: 100%;
   overflow: hidden;
   line-height: 0;
+  z-index: -1;
   transform: rotate(180deg);
 }
 
@@ -730,14 +731,13 @@ p {
 }
 
 .buttonContainer {
-
+  padding-top: 0;
 }
 
 footer {
   color: var(--color-mint);
   text-align: center;
   position: fixed;
-  z-index: 1;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -765,6 +765,7 @@ section {
 .diagonal::after {
   content: '';
   position: absolute;
+  opacity: 0.8;
   background-image:
     linear-gradient(45deg,
       var(--color-mint),
@@ -779,6 +780,12 @@ section {
   font-size: 5rem;
   display: flex;
 }
+
+.med-heading {
+  font-size: 3rem;
+  display: flex;
+}
+
 
 #name {
   color: var(--color-pinkred)
