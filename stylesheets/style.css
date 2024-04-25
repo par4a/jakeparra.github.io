@@ -718,7 +718,7 @@ h3,
 p {
   font-family: Mosk, sans-serif;
   letter-spacing: .04rem;
-  color: var(--color-pinkred);
+  color: var(--color-logobackground);
   position: relative;
   padding-right: 5%;
 }
@@ -757,12 +757,12 @@ section {
   padding-block: 5rem;
 }
 
-.diagonal {
+.area {
   position: relative;
   color: #000;
 }
 
-.diagonal::after {
+.area::after {
   content: '';
   position: absolute;
   opacity: 0.8;
@@ -772,7 +772,6 @@ section {
       #12c2e9,
       var(--color-mint));
   inset: 0;
-  transform: skewY(-6deg);
   z-index: -1;
 }
 
